@@ -50,9 +50,7 @@ class MathJax extends React.Component {
 
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 			<div id="formula" style="visibility: hidden;">
-				<p style="font-size:${this.props.fontSize?this.props.fontSize:14}px;font-weight:${this.props.fontWeight?this.props.fontWeight:'normal'};font-family:fantasy">
-					${content}
-				</p>
+				${content}
 			</div>
 		`;
 	}
@@ -66,6 +64,7 @@ class MathJax extends React.Component {
 			<View style={{...props.style}}>
 				<AutoHeightWebView
 					style={{...props.webViewStyle}}
+					customStyle={`body{overflow-y: hidden`}
 					scrollEnabled={false}
 					onMessage={this.handleMessage.bind(this)}
 					source={{ html }}
