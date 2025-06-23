@@ -7,7 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "npm tun test"
+    "test": "npm run test"
   },
   "repository": {
     "type": "git",
