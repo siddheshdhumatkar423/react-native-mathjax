@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/calvinkei/react-native-mathjax/issues"
   },
-  "homepage": "https://github.com/calvinkei/react-native-mathjax#readme"
+  "homepage": "https://github.com/calvinkei/react-native-mathjax#readme",
+  "engines": {
+    "node": "18"
+  }
 }
